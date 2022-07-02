@@ -24,7 +24,7 @@ class _ChatScreenState extends State<ChatScreen> {
     try{
       final user = await _auth.currentUser!;
       if (user != null){
-        var loggedInUser = user;
+        loggedInUser = user;
         print(loggedInUser.email);
       }
     }catch(e){
